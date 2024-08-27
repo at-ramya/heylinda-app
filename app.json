@@ -1,8 +1,8 @@
 {
   "expo": {
-    "owner": "heylinda",
+    "owner": "at-ramya",
     "name": "Hey Linda",
-    "slug": "hey-linda",
+    "slug": "heylinda",
     "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,11 +16,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "buildNumber": "20",
-      "infoPlist": {},
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+      },
       "bundleIdentifier": "com.meditation.heylinda"
     },
     "android": {
@@ -42,6 +46,11 @@
           "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "43cfb0ca-5eaa-4398-a47e-d9674d3f597e"
+      }
+    }
   }
 }
